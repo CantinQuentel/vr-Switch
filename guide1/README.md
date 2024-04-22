@@ -16,7 +16,7 @@
 
 
 ## Objectif du document
-Ce document a pour objectif d'expliquer comment créer et mettre en ligne des visites virtuelles incluant des éléments pédagogiques diversifiés. La technologie utilisée sera entièrement gratuite et sous licence libre - y inclut l'hebergement. Cette technologie doit permettre une navigation compatible avec les spécificités de multiples appareils, y inclut la navigation en VR.
+Ce document a pour objectif d'expliquer comment créer et mettre en ligne des visites virtuelles incluant des éléments pédagogiques diversifiés. La technologie utilisée sera entièrement gratuite et sous licence libre - y inclut l'hébergement. Cette technologie doit permettre une navigation compatible avec les spécificités de multiples appareils, y inclut la navigation en VR.
 
 Ce document inclut toutes les étapes de la réalisation, des prises de vue à l'édition du code en passant par l'hébergement. Le tout a pour objectif d'être écrit de la manière la plus simple et didactique possible, en procédant étape par étape.
 
@@ -37,34 +37,34 @@ Que vous soyez un enseignant cherchant à intégrer la réalité virtuelle dans 
 # [Partie 1 - Matériel préparatoire et prises de vues](https://maximer37.github.io/VR-Markdown/guide1/partie1/index.html)
 
 
-## En amont : La plannification
+## En amont : La planification
 
-La plannification, définissant l'objet de la visite et le contenu qui devra s'afficher, est essentielle en amont de toute production. Ceci est plus simple à dire qu'à faire, mais il est essentiel de définir l'objectif de la visite et d'avoir une idée claire de *ce qui doit être montré*.
+La planification, définissant l'objet de la visite et le contenu qui devra s'afficher, est essentielle en amont de toute production. Ceci est plus simple à dire qu'à faire, mais il est essentiel de définir l'objectif de la visite et d'avoir une idée claire de *ce qui doit être montré*.
 
-Dans notre cadre, nous allons réaliser une viste virtuelle simple du terrain de sport de lycée Louis de Cormontaigne à Metz, se basant sur deux panoramas à 360°. Cette visite devra inclure des informations textuelles, des images, des vidéos, et des objets en 3 dimensions qui s'insèrent naturellement dans un panorama en 360°. Pour simplifier l'exemple, nous allons lier deux panoramas 360° entre eux pour permettre de simuler une ballade. Suivant la logique de navigation entre panoramas, l'orientation de l'utilisateur dans un panorama va avoir un impact: il est plus naturel quand on se déplace d'un point A à un point B que la vue lors de l'arrivée au point B suive une ligne droite issue du point A, afin de faire comprendre l'idée du mouvement. De même, l'ensemble des panoramas seront enrichis avec du contenu pédagogique sous diverses formes. Ce contenu doit s'afficher *à sa place* dans le panorama (par exemple le texte qui donne des information sur un batiment doit flotter uniquement au dessus de ce batiment).
+Dans notre cadre, nous allons réaliser une viste virtuelle simple du terrain de sport de lycée Louis de Cormontaigne à Metz, se basant sur deux panoramas à 360°. Cette visite devra inclure des informations textuelles, des images, des vidéos, et des objets en 3 dimensions qui s'insèrent naturellement dans un panorama en 360°. Pour simplifier l'exemple, nous allons lier deux panoramas 360° entre eux pour permettre de simuler une ballade. Suivant la logique de navigation entre panoramas, l'orientation de l'utilisateur dans un panorama va avoir un impact: il est plus naturel quand on se déplace d'un point A à un point B que la vue lors de l'arrivée au point B suive une ligne droite issue du point A, afin de faire comprendre l'idée du mouvement. De même, l'ensemble des panoramas seront enrichis avec du contenu pédagogique sous diverses formes. Ce contenu doit s'afficher *à sa place* dans le panorama (par exemple le texte qui donne des informations sur un bâtiment doit flotter uniquement au-dessus de ce batiment).
 
-Ceci explique l'importance d'une reflexion en amont, afin d'être sûr d'avoir toutes les images requises. Prendre une prise de vue manquante dans un deuxième temps risque expose l'opération à des changement brutaux de conditions de navigation (lumière ou météo différente par exemple) qui vont nuire à l'immersion.
+Ceci explique l'importance d'une réflexion en amont, afin d'être sûr d'avoir toutes les images requises. Prendre une prise de vue manquante dans un deuxième temps risque expose l'opération à des changements brutaux de conditions de navigation (lumière ou météo différente par exemple) qui vont nuire à l'immersion.
 
 Attention en particulier aux épineuses questions de droits à l'image et des conséquences potentielles au niveau du RGPD. Il peut être utile de demander aux personnes ne souhaitant pas être visibles sur le panorama de sortir du champ de la caméra.
 
-## Matériel nécéssaire
+## Matériel nécessaire
 
 - Une caméra 360° (nous utiliserons une caméra Insta 360 pour cet exemple). 
 - Un pied pour appareil photo (afin d'avoir une hauteur de prise de vue fixe entre les différents panoramas)
 - Un ordinateur, avec les logiciels suivants
-  - Un environnement de développement (ici VS Codium)
-  - Un logiciel d'édition et de retouche d'image (ici GIMP)
-  - Un compte GitHub (nous utiliserons cette plateforme pour l'hebergement des scènes, et nous nous assurerons que vous puissiez retrouver les fichiers issus de ce document)
+  - Un environnement de développement (ici [VSCodium](https://vscodium.com)
+  - Un logiciel d'édition et de retouche d'image (ici [GIMP](https://gimp.org)
+  - Un compte GitHub (nous utiliserons cette plateforme pour l'hébergement des scènes, et nous nous assurerons que vous puissiez retrouver les fichiers issus de ce document)
 
 
 ### Prise des vues 360°
 
 Il est utile de bien plannifier en amont de toutes prises de vues les endroits où seront réalisés les photos.
-En exterieur, des outils comme google earth sont particulièrement utiles.
+En extérieur, des outils comme Google Earth sont particulièrement utiles.
 
 ![plannification](<partie2/resources/image/plan.jpg>)
 
-L'importation des images est le moment ideal pour modifier la résolution en 2880 pixel par 1440 pixel avec le logiciel de la caméra. Pour flouter les visages (question de droits à l'image), nous allons utiliser GIMP.
+L'importation des images est le moment idéal pour modifier la résolution en 2880 pixels par 1440 pixels avec le logiciel de la caméra. Pour flouter les visages (question de droits à l'image), nous allons utiliser GIMP.
 
 ## GIMP - un couteau suisse de l'image pour préparer les panoramas
 
@@ -72,7 +72,7 @@ GIMP est accessible gratuitement, ce qui en fait un outil économique pour les a
 
 ### Importation des images
 
-Importez toutes les images composant vos panoramas 360° dans GIMP au formmat JPEG et aux dimensions 2880 x 1440.
+Importez toutes les images composant vos panoramas 360° dans GIMP au format JPEG et aux dimensions 2880 x 1440 pixels.
 
 ### Réglages et corrections
 
@@ -99,7 +99,7 @@ Vérifiez votre adresse e-mail lors de l’inscription. Sans adresse e-mail vér
 
 Vous pouvez créer un nouveau dépôt ou utiliser un dépôt existant pour votre site.
 
-on va crée un ***repositories***
+on va créer un ***repository***
 
 <img src="partie1/resources/image/github3.png" alt="Repositories" height="auto" width="850">
 
@@ -143,7 +143,7 @@ enfin selectionner ***select branch*** puis ***Main***
 
 
 
-Configurez une source de publication pour votre site. Vous pouvez choisir entre différentes options, comme une branche dédiée ou un workflow GitHub Actions personnalisé.
+Configurez une source de publication pour votre site. Vous pouvez choisir entre différentes options, comme une branche dédiée ou un workflow GitHub Actions personnalisées.
 
 
 Créez le fichier d’entrée pour votre site (par exemple, un fichier HTML, Markdown, etc.).
@@ -155,11 +155,11 @@ Publiez votre site en poussant vos fichiers vers le dépôt sur GitHub.
 Votre site sera accessible via l’URL https://<votre-nom-d'utilisateur>.github.io.
 
 
-Remarque : Les sites GitHub Pages sont disponibles publiquement sur Internet, même si leur dépôt est privé. Assurez-vous de ne pas inclure de données sensibles dans votre dépôt avant la publication
+Remarque : les sites GitHub Pages sont disponibles publiquement sur Internet, même si leur dépôt est privé. Assurez-vous de ne pas inclure de données sensibles dans votre dépôt avant la publication
 
-### Création de la page html pour le panorama
+### Création de la page HTML pour le panorama
 
-Nous allons utiliser le code suivant pour importer l'image 360 sur le navigateur:
+Nous allons utiliser le code suivant pour importer l'image 360° sur le navigateur:
 
 ```html
 <!DOCTYPE html>
@@ -176,7 +176,7 @@ Nous allons utiliser le code suivant pour importer l'image 360 sur le navigateur
 ```
 *... et c'est tout!*
 
-Nous enregistrons ce document html à la racine de notre compte Github et l'intitullons index.html.
+Nous enregistrons ce document HTML à la racine de notre compte Github et l'intitulons index.html.
 
 ## Explication du code
 
@@ -198,7 +198,7 @@ Ce code est un exemple simple d’une page Web qui utilise la bibliothèque Java
 `<a-sky src="./images/3601.jpg"></a-sky>` : Cette balise spécifique à A-Frame crée un ciel autour de la scène avec comme texture l’image spécifiée. Dans ce cas, l’image est "3601.jpg" qui se trouve dans le répertoire "images".
 
 
-`<a-scene>` est l’élément principal qui contient tous les objets 3D de la scène scène A-Frame.
+`<a-scene>` est l’élément principal qui contient tous les objets 3D de la scène A-Frame.
 
 
 `<a-assets>` est utilisé pour précharger les ressources, comme l'image de panorama.
@@ -219,7 +219,7 @@ En résumé, ce code crée une scène de réalité virtuelle avec un ciel textur
 
 
 
-# [Partie 2 - Navigation entre deux panorama 360](https://maximer37.github.io/VR-Markdown/guide1/partie2/index.html)
+# [Partie 2 - Navigation entre deux panoramas 360°](https://maximer37.github.io/VR-Markdown/guide1/partie2/index.html)
 
 <img src="partie2/resources/image/panorama2.jpg" alt="premier panorama" height="auto" width="850">
 
@@ -286,7 +286,7 @@ Nous cherchons la ligne de code qui fait référence à la ***fleche*** , puis n
 
 
 
-# [Partie 3 - Animer un objet et inserer un texte](https://maximer37.github.io/VR-Markdown/guide1/partie3/index.html)
+# [Partie 3 - Animer un objet et insérer un texte](https://maximer37.github.io/VR-Markdown/guide1/partie3/index.html)
 
 Ensuite, nous allons animer notre flèche pour qu'elle se déplace de haut en bas, afin de mieux indiquer la direction que prendra l'utilisateur, ainsi que l'ajout d'un disque.
 
@@ -297,7 +297,7 @@ Ensuite, nous allons animer notre flèche pour qu'elle se déplace de haut en ba
 ### Avantages de Blender :
 
 
-Blender est un logiciel gratuit et open source, qui offre une suite complète d'outils de modélisation 3D, permettant aux utilisateurs de créer des environnements virtuels complexes pour leurs panoramas 360°. Ces outils incluent la modélisation polygonale, la sculpture, le texturage, l'éclairage et le rendu avancé.
+[Blender](https://blender.org) est un logiciel gratuit et open source, qui offre une suite complète d'outils de modélisation 3D, permettant aux utilisateurs de créer des environnements virtuels complexes pour leurs panoramas 360°. Ces outils incluent la modélisation polygonale, la sculpture, le texturage, l'éclairage et le rendu avancé.
 
 ### Modélisation :
 
@@ -317,7 +317,7 @@ En conclusion, il ne reste plus qu'à redimensionner l'objet en utilisant le ***
 
 <img src="partie3/resources/image/imagegenerique/blender2.png" alt="Blender etape 2" height="auto" width="450">
 
-## Integration d'un objet 3D dans un panorama 360 :
+## Integration d'un objet 3D dans un panorama 360° :
 
 Voici le résultat que nous obtenons sur la page web après l'avoir intégré avec le code suivant:
 
@@ -350,13 +350,13 @@ Nous allons également insérer du texte pour mieux orienter l'utilisateur dans 
 ````js
 // crée un composant du nom  de "tang"
 AFRAME.registerComponent('tang', {
-  // on enregistre les parametere du composant
+  // On enregistre les paramètres du composant
     schema: {
-      // C'est les parametre nommé avec un type et une valeur avant
+      // Ce sont les paramètres nommés avec un type et une valeur avant
       angle: {type: 'int', default: 0},
       Y: {type: 'int', default: 1}
     },
-      // "int" c'est la fonction executer quand le composant est attacher a un objet  
+      // "int" est la fonction exécutée quand le composant est attaché à un objet  
     init: async function() {
       this.update = this.update.bind(this)
     },
@@ -366,7 +366,7 @@ AFRAME.registerComponent('tang', {
 ainsi que ce code également:
 
 ````html
-<!-- Composant qui permet d'afficher le texte que l'on nom "tang" et qui fonction avec l'index.js -->
+<!-- Composant qui permet d'afficher le texte que l'on nomme "tang" et qui fonctionne avec l'index.js -->
 <a-entity id="Batiment1" text="value: Batiment 1; align: center; width: 20; color: #ffea00" 
     position="6.01464 2.92799 -5.90422" visible="" rotation="10.3606 -34.11021 0.21715100435458204">
 </a-entity>
@@ -411,7 +411,7 @@ Sur la gauche, nous sélectionnons le texte, puis nous choisissons le menu "Text
 # [Partie 4 - Implémentation d'une vidéo](https://maximer37.github.io/VR-Markdown/guide1/partie4/index.html)
 
 
-Pour débuter la lecture d'un fichier vidéo ou audio, une interaction est nécessaire pour les démarrer : ceux-ci sont bloqués par défaut. Ceci est dû à des préoccupations concernant notemment l'économie de bande passante. Dans notre situation, nous allons concevoir une nouvelle page HTML comportant un panneau avec l'inscription "click me" dessus. Ce panneau nous permettra d'interagir avec le site, déclenchant ainsi la lecture automatique de la vidéo. Nous utiliserons une seule ligne de code HTML pour créer ce panneau.
+Pour débuter la lecture d'un fichier vidéo ou audio, une interaction est nécessaire pour les démarrer : ceux-ci sont bloqués par défaut. Ceci est dû à des préoccupations concernant notamment l'économie de bande passante. Dans notre situation, nous allons concevoir une nouvelle page HTML comportant un panneau avec l'inscription "click me" dessus. Ce panneau nous permettra d'interagir avec le site, déclenchant ainsi la lecture automatique de la vidéo. Nous utiliserons une seule ligne de code HTML pour créer ce panneau.
 
 <img src="partie4/resources/image/imagegenerique/clickme.png" alt="Click me" height="auto" width="450">
 
